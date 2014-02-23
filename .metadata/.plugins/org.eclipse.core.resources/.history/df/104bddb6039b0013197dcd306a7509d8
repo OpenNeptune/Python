@@ -1,0 +1,10 @@
+#! /usr/bin/python
+#coding:UTF-8
+'''
+    @author: neptune
+    @time: 2014-02-20
+    @descript: 主要记录Pyhon中一些常用的东西.建议宽屏阅读使用
+'''
+
+if __name__ == '__main__':
+    pass

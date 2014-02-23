@@ -490,21 +490,6 @@ def demo_set():
     set8 =set(range(4))
     set9 = set(range(8))
     set0 = set(range(20))
-    print set8.union(set9)
-    print set9.intersection(set8)
-    print set0.difference(set9)
-    print set0.symmetric_difference(set8)
-    
-    #集合包含操作issubset()/issuperset()
-    print set8.issubset(set9)
-    print set9.issuperset(set8)
-    
-    #布尔值环境下
-    print "\t布尔值环境下：空集合位假，包含至少一个元素不论其值都位真"
-    if set():
-        print "这个一个空几个"
-    else:
-        print "集合不为空"
     
     
     

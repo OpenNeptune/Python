@@ -463,49 +463,8 @@ def demo_set():
     print "\t有三种方法可以删除集合中的元素discard(),remove() pop()"
     set6 = set(range(10))
     print "len(set6)=>",len(set6),set6
-    #discard()接收一个单值作为参数，并从集合中删除该值,如果该值不存在执行一个空操作
     set6.discard(8)
     print "len(set6)=>",len(set6),set6
-    #remove()接收一个单值作为参数，并从集合中删除该值，如果改制不存在将抛出KeyError
-    set6.remove(6)
-    print "len(set6)=>",len(set6),set6
-    #pop()从集合随机删除某个值，并返回该值
-    print  set6.pop()
-    print "len(set6)=>",len(set6),set6
-    #clear()将集合清空
-    set6.clear()
-    print "len(set6)=>",len(set6),set6
-    
-    #成员测试
-    set7 = set(range(20))
-    print 15 in set7
-    print 20 in set7
-    print 30 not in set7
-    
-    #集合操作
-    #union()    方法返回一个新集合，其中包括俩个集合中的所有元素
-    #intersection()    返回一个的新的集合，其中包括俩个集合中同时出现的元素
-    #difference()    返回新的几个，其中包前面集合有但后面集合没有的元素
-    #symmetric_difference()    方法返回一个新的集合，其中装着所有只在一个中出现的元素
-    set8 =set(range(4))
-    set9 = set(range(8))
-    set0 = set(range(20))
-    print set8.union(set9)
-    print set9.intersection(set8)
-    print set0.difference(set9)
-    print set0.symmetric_difference(set8)
-    
-    #集合包含操作issubset()/issuperset()
-    print set8.issubset(set9)
-    print set9.issuperset(set8)
-    
-    #布尔值环境下
-    print "\t布尔值环境下：空集合位假，包含至少一个元素不论其值都位真"
-    if set():
-        print "这个一个空几个"
-    else:
-        print "集合不为空"
-    
     
     
 #===========================================================================================================
