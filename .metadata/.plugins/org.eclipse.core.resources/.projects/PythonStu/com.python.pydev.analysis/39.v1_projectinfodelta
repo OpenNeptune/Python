@@ -1,0 +1,7 @@
+INSTUPstu.reduceTest
+/home/neptune/workspace/Python/PythonStu/stu/reduceTest.py
+INFOS:&&2|1|2|0&&3|3|2|0&&3|4|2|0&&3|4|2|0
+li=3
+value=4
+stu.reduceTest=2
+reduce_function=1

@@ -6,7 +6,7 @@
     @descript: 主要记录Pyhon中一些常用的东西.建议宽屏阅读使用
 '''
 import sys
-
+import re
 
 def demo_help():
     print "快速查找:利用编辑的查找功能查找@关键字。"
@@ -505,9 +505,91 @@ def demo_set():
         print "这个一个空几个"
     else:
         print "集合不为空"
+#===========================================================================================================
+#@re
+#    演示正则表达式的一些基本操作
+#===========================================================================================================   
+def demo_re():
     
+    print """
+        正则表达式是搜索，替换和解析复杂字符模式的一种强大的而标准的方法。几乎在所有语言中都可以使用其来处理字符串。
+        在Python中通过re模块可以使用正则。通过re模块，提供了各种正则表达式的匹配操作，在文本解析，复杂字符串分析
+        和信息提取时是非常有用的操作。
+        re模块尽管不能满足所有复杂的匹配情况，但足够在绝大多数情况下能有有效的处理字符，python会将正则表达式转
+        换位字节码，利用C语言的匹配引擎进行深度优先匹配
+        下面是一些正则表达式的基本语法:
+      
+        "."            任意字符
+        "^"            字符串开始
+        "$"            字符串结尾
+        "*"            0 个或多个字符（贪婪匹配）
+        "+"            1 个或多个字符（贪婪匹配）
+        "?"            0 个或多个字符（贪婪匹配）
+        *?,+?,??       以上三个取第一个匹配结果（非贪婪匹配）
+        {m,n}          对于前一个字符重复m到n次，{m}亦可a{6}匹配6个a、a{2,4}匹配2到4个a
+        {m,n}?         对于前一个字符重复m到n次，并取尽可能少‘aaaaaa’中a{2,4}只会匹配2个
+        "\\"           特殊字符转义或者特殊序列    
+        []             表示一个字符集    [0-9]、[a-z]、[A-Z]、[^0]
+        "|"            或    A|B,或运算
+        (...)          匹配括号中任意表达式    
+        (?#...)        注释，可忽略    
+        (?=...)        Matches if ... matches next, '(?=test)'在hellotest中匹配hello
+        (?!...)        Matches if ... doesn't match next.'(?!=test)'  若hello后面不为test，匹配hello
+        (?<=...)       Matches if preceded by ... .'(?<=hello)test'  在hellotest中匹配test
+        (?<!...)       Matches if not preceded by ....'(?<!hello)test'  在hellotest中不匹配test
+        
+        ^ 匹配字符串开始位置。
+        $ 匹配字符串结束位置。
+        \b 匹配一个单词边界。
+        \d 匹配一个数字。
+        \D 匹配一个任意的非数字字符。
+        x? 匹配可选的x字符。换句话说，就是0个或者1个x字符。
+        x* 匹配0个或更多的x。
+        x+ 匹配1个或者更多x。
+        x{n,m} 匹配n到m个x，至少n个，不能超过m个。
+        (a|b|c) 匹配单独的任意一个a或者b或者c。
+        (x) 这是一个组，它会记忆它匹配到的字符串。你可以用re.search返回的匹配对象的groups()函数来获取到匹配的值。
+        """
+    rl = re.compile(r"world")
+    if rl.match('helloworld'):
+        print 'match success!'
+    else:
+        print 'match faild!'
+    if rl.search("helloworld"):
+        print 'search success!'
+    else:
+        print 'search faild!'
     
+    #直接调用
+    if re.search(r'abc','hello abc world'):
+        print 'search success!'
+    else:
+        print 'search faild!'
     
+    strs = "192.168.1.1"
+    li = re.split("\.",strs)
+    print "type(li)=>",type(li),li
+    strs = re.sub("\.","-",strs)
+    print strs
+    print re.subn("-",".",strs)
+    
+    rl = re.compile(r'\d')
+    print re.findall(rl,"hello[h1]held3sds3iwonder]lo")
+    
+    #松散式的正则
+    print """
+        python允许使用松散式的正则表达式，松散式的正则表达式和普通的正则表达式有俩点不同：
+            空白符被忽略！空格，制表符和回车符在表达式中并不会匹配，如果想让作用可以转意
+            注释信息被忽略
+    
+    patterns ='''
+        ^            #字符从开头
+        M{0,3}       #一些注释
+        (cx|cl)      #一些注释
+        $
+    '''
+    re.search(patterns,'M',re.VERBOSE)  #额外的参数re.VERBOSE必须传
+    """
 #===========================================================================================================
 if __name__ == "__main__":
     #print sys.argv
@@ -523,3 +605,41 @@ if __name__ == "__main__":
                 return_function()
     else:
         demo_help()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
