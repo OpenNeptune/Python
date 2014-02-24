@@ -1,0 +1,9 @@
+#! /usr/bin/python
+#coding:UTF-8
+import os
+def operation_file(file_name):
+    if(os.path.exists(file_name)):
+        
+
+if __name__ == '__main__':
+    pass

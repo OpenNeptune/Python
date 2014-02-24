@@ -1,0 +1,20 @@
+#! /usr/bin/python
+#coding:UTF-8
+import sys
+def operation_file(file_name):
+    try:
+        h_file = open(file_name,'r',1)
+        try:
+            readlines = h_file.readlines();
+            print readlines
+        finally:
+            h_file.close()
+    except IOError:
+        print "IOError"
+def operation_wrtiefile(file_name):
+    
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print "usage:*.py path/file_name"
+    else:
+        operation_file(sys.argv[1])

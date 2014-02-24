@@ -1,0 +1,19 @@
+#! /usr/bin/python
+#coding:UTF-8
+import os
+def operation_file(file_name):
+    if(os.path.exists(file_name)):
+        try:
+            h_file = open(file_name,'r+')
+            try:
+                readlines = h_file.readlines();
+                print readlines
+            finally:
+                h_file.close()
+        except IOError:
+            print "IOError"
+    else:
+        return (False,"文件不存在")
+
+if __name__ == '__main__':
+    pass

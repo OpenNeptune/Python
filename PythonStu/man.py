@@ -591,6 +591,61 @@ def demo_re():
     re.search(patterns,'M',re.VERBOSE)  #额外的参数re.VERBOSE必须传
     """
 #===========================================================================================================
+#@file
+#    演示文件的一些基本操作
+#===========================================================================================================
+def demo_file():
+    print '''
+        Python提供了通用的文件操作方式，主要涉及os和shutil俩个模块
+    '''
+    print """常用的API有：
+    os.getcwd()    返回Python脚本当前的工作路径
+    os.listdir()    返回制定目录下的所有文件和目录
+    os.remove()    函数用来删除一个文件
+    os.removedirs()    删除多个目录
+    os.path.isfile()    校验给出的路径是否是一个文件
+    os.path.isdir()    校验给出的路径是否是一个目录
+    os.path.isabs()    判断是否是绝对路径
+    os.path.exists()    校验给出的文件是否存在
+    os.path.split()    返回路径的目录名和文件名 返回tule
+    os.path.splitext()    分离扩展命
+    os.path.dirname()    获取路径名
+    os.path.basename()    获取文件名
+    os.system()    运行shell命令
+    os.getenv()/os.putenv()    读取和设置环境变量
+    os.linesep    给出当前平台的换行符
+    os.name    指示正在使用的平台
+    os.rename(old,new)    重命名
+    os.makedirs()    创建多级目录
+    os.stat(file)    获取文件属性
+    os.chmod(file)    修改文件权限于时间戳
+    os.exit()    终止当前进程
+    os.path.getsize()    获取文件大小
+    os.mknod()    创建空文件
+    os.redir()    删除空目录
+    os.chdir()    换路径
+    os.mkdir()    创建目录
+    fp = open()    打开文件，类似于window中的获取文件的操作句柄
+    fp.read([size])    以byte为单位读取数据
+    fp.readline([size])    按行读取，如果有size可能返回的是一行的部分
+    fp.readlines()    按行读取全部内容，以list的形式返回
+    fp.write(str)    把str写到文件中，write()并不会在str后面加上换行符
+    fp.writelines(seq)    把seq的内容全部写入到文件中(多行一次写入，不会添加换行符)
+    fp.close()    关闭文件
+    fp.flush()    把缓冲区的内容写入到硬盘
+    fp.fileno()    返回一个长整形的文件标签
+    fp.isatty()    文件是否是一个终端文件
+    fp.tell()    返回文件操作标记的当前位置，以文件的开头原点
+    fp.next()    返回下一行，并将文件操作标记移位到下一行
+    fp.seek(offset,[whence])    将文件打操作标记移动到offset的位置
+    fp.truncate([size])    把文件裁成指定大小
+    shutil.copyfile()    复制文件
+    shutil.copy()    复制文件，可以是目录
+    shutil.copytree()    复制为新目录
+    shutil.move()    移动文件
+    shutil.rmtree()     删除目录
+    """
+#===========================================================================================================
 if __name__ == "__main__":
     #print sys.argv
     if len(sys.argv) >=2:

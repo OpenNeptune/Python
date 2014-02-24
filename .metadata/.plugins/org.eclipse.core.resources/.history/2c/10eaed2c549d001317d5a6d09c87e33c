@@ -1,0 +1,8 @@
+'''
+Created on Feb 24, 2014
+
+@author: neptune
+'''
+
+if __name__ == '__main__':
+    """列出当前目录及当前目录下的文件"""
