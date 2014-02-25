@@ -1,0 +1,6 @@
+#! /usr/bin/python
+#coding:UTF-8
+
+#演示通过HTMLParser解析并处理特定的HTML标签
+if __name__ == '__main__':
+    pass

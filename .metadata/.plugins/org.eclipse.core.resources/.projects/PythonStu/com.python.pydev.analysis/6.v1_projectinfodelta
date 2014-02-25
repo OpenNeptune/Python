@@ -1,1 +1,7 @@
-DELSTRstu.ReadWriteFile
+INSTUPstu.HTML.HP_HandleSpecilTag
+/home/neptune/workspace/Python/PythonStu/stu/HTML/HP_HandleSpecilTag.py
+INFOS:&&1|1|2|0&&2|3|2|1&&3|4|2|1
+handle_starttag=3
+stu.HTML.HP_HandleSpecilTag=2
+ph_parser=4
+ParserForm=1
