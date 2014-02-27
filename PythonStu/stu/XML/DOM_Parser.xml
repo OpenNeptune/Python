@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<users>
+	<user id="10001">
+		<username>admin</username>
+		<email>admin@admin.com</email>
+		<sex>man</sex>
+	</user>
+	<user id="10002">
+		<username>administrator</username>
+		<email>adminstrator@admin.com</email>
+		<sex>woman</sex>
+	</user>
+	<user id="10003">
+		<username>system</username>
+		<email>system@admin.com</email>
+		<sex>man</sex>
+	</user>
+	<user id="10004">
+		<username>dba</username>
+		<email>dba@admin.com</email>
+		<sex>man</sex>
+	</user>
+	<user id="10005">
+		<username>sys</username>
+		<email>sys@admin.com</email>
+		<sex>woman</sex>
+	</user>
+	<user id="10006">
+		<username>root</username>
+		<email>root@admin.com</email>
+		<sex>man</sex>
+	</user>
+</users>

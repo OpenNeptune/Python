@@ -91,6 +91,7 @@ diveintopython.urllister|/home/neptune/workspace/Python/PythonStu/diveintopython
 diveintopython.zh_cn.makerealworddoc|/home/neptune/workspace/Python/PythonStu/diveintopython/zh_cn/makerealworddoc.py
 man|/home/neptune/workspace/Python/PythonStu/man.py
 stu.APIHelper|/home/neptune/workspace/Python/PythonStu/stu/APIHelper.py
+stu.HTML.HP_HandleSpecilTag|/home/neptune/workspace/Python/PythonStu/stu/HTML/HP_HandleSpecilTag.py
 stu.HTML.HP_firstDemo|/home/neptune/workspace/Python/PythonStu/stu/HTML/HP_firstDemo.py
 stu.ListCWDFile|/home/neptune/workspace/Python/PythonStu/stu/ListCWDFile.py
 stu.ReadWriteFile|/home/neptune/workspace/Python/PythonStu/stu/ReadWriteFile.py
