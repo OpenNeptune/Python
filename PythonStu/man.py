@@ -661,11 +661,11 @@ if __name__ == "__main__":
         selfMod = __import__(__name__)
         if sys.argv[1] == '-m':
             return_function = getattr(selfMod,"demo_api")
-            if(callable(selfMod.return_function) and callable(selfMod.return_function)):
+            if(callable(selfMod.return_function)):
                 return_function(sys.argv[2])
         else:
             return_function = getattr(selfMod,"demo_%s" % sys.argv[1])
-            if(callable(selfMod.return_function) and callable(selfMod.return_function)):
+            if(callable(selfMod.return_function)):
                 return_function()
     else:
         demo_help()
