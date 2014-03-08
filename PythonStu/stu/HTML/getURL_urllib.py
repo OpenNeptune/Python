@@ -33,13 +33,44 @@ def demo_urlretrieve():
     filename,m = urllib.urlretrieve("http://www.python.org")
     print "save to locale'file:".ljust(30),filename
     print "httpmessage:".ljust(30),m
-
+    urllib.urlcleanup()
 #将制定的资源写入到制定的文件中
 def demo_urlretrieveFilename():
     file_name ="python.html"
     filename,m = urllib.urlretrieve("http://www.python.org",filename=file_name)
     print "retrieve filename:",filename
     print "httpmessage:",m
+
+#获取返回文件信息
+def demo_getUrl():
+    print "获取返回资源的URL  请求的URL和返回的URL未必相同。服务器可能做了重定向"
+    r = urllib.urlopen("http://google.com")
+    print r.geturl()
+#获取服务器返回的信息
+def demo_getInfo():
+    print "请求服务器，打印服务器返回的相关信息（Http head）"
+    r = urllib.urlopen("http://www.baidu.com")
+    info = r.info()
+    print "info's type",type(info)
+    for k,v in info.items():
+        print k,"=>",v
+
+    r = urllib.urlopen("http://www.qq.com")
+    info = r.info()
+    print "info's type",type(info)
+    for k,v in info.items():
+        print k,"=>",v
+
+def demo_addHeader():
+    opener = urllib.FancyURLopener()
+    opener.addheader('user-agent',' Mozilla/5.0 (X11; Windows NT1; rv:24.0) Firefox/24.0')
+    opener.addheader('Accept',' text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8')
+    opener.addheader('Accept-Language',' en-US,en;q=0.5')
+    opener.addheader('Accept-Encoding',' gzip, deflate')
+    opener.addheader('Connection',' close')
+    opener.addheader('Cache-Control',' max-age=0')
+    handler =  opener.open("http://localhost:8080/J2EE/printrequest?user=name&pass=admin")
+    print handler.fp.read()
 #help
 def demo_help():
     print "*.py  urlopen:演示打开并读取HTML文件 "
