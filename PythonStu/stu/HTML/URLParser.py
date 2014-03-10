@@ -186,3 +186,8 @@ if __name__ == "__main__":
     else:
         print "help:"
         print "self.py parseurl".ljust(30),"演示如何解析url"
+        print "*.py  join".ljust(30),"合并url"
+        print "*.py  split".ljust(30),"拆分URL"
+        print "*.py  decodeURL".ljust(30),"解码URL"
+        print "*.py  handlerURL".ljust(30),"一个处理URL的例子"
+        print "*.py base64".ljust(30),"一个BASE64编码的URL实例"
