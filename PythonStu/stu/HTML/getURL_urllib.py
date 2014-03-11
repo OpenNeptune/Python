@@ -4,6 +4,10 @@
 #   利用标准库urllib获取想要的HTML文件
 import urllib
 import sys
+import httplib
+
+#打开urllib的debug模式，清晰的查看http请求的过程
+httplib.HTTPConnection.debuglevel=1    
 
 #获取python.org的首页并打印
 def demo_urlopen():
