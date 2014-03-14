@@ -12,10 +12,10 @@ class parserHref(SGMLParser):
         SGMLParser.reset(self)
     
     def start_a(self,attrs):
-        href = [v for k,v in attrs in k=='href']
+        href = [v for k,v in attrs if k=='href']
         print href
         if href:
-            self.urls.extned(href)
+            self.urls.extend(href)
 
 http_head ={
     'User-Agent':'Mozilla/5.0 (X11; Linux x86_64; rv:24.0) Gecko/20100101 Firefox/24.0',
@@ -26,15 +26,14 @@ http_head ={
     'Connection': 'keep-alive'
     }
 
-host ='http://www.baidu.com/#wd=python'
+host ='http://www.mouseos.com/'
 
 request = urllib2.Request(host,None,http_head)
 response = urllib2.urlopen(request)
 
-
+responseText = response.read().decode('gbk')
 html_engine = parserHref()
-html_engine.feed(response.read())
-print 'result'
+html_engine.feed(responseText)
 for item in html_engine.urls:
     print item
 
