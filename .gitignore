@@ -1,8 +1,0 @@
-*.class
-*.pyc
-.project
-.pydevproject
-logs/
-RemoteSystemsTempFiles/
-.metadata/
-PythonStu/.settings/

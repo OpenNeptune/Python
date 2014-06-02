@@ -1,6 +1,0 @@
-#! /usr/bin/python
-#coding:UTF-8
-
-form HTMLParser import HTMLParser
-if __name__ == '__main__':
-    pass
