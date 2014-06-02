@@ -1,6 +1,6 @@
 
-<h1>@version: CentOS 6.x </h1>
-<h1>Python :2.6.6</h1>
+<h1>@version: CentOS 6.x /ubuntu 14.04</h1>
+<h1>Python :2.6.6/2.7.6</h1>
 
 
 This's Notes for Python!
