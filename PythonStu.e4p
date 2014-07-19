@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Project SYSTEM "Project-4.6.dtd">
+<!-- eric4 project file for project PythonStu -->
+<!-- Saved: 2014-07-14, 22:41:39 -->
+<!-- Copyright (C) 2014 ,  -->
+<Project version="4.6">
+  <Language>en</Language>
+  <ProgLanguage mixed="0">Python</ProgLanguage>
+  <ProjectType>Qt4</ProjectType>
+  <Description></Description>
+  <Version>0.1</Version>
+  <Author></Author>
+  <Email></Email>
+  <Sources>
+    <Source>PythonStu/SeayFindShell/tmp/__init__.py</Source>
+    <Source>PythonStu/SeayFindShell/plus/__init__.py</Source>
+    <Source>PythonStu/SeayFindShell/plus/php_array_map.py</Source>
+    <Source>PythonStu/SeayFindShell/plus/php_eval_assert.py</Source>
+    <Source>PythonStu/SeayFindShell/plus/php_zendencode.py</Source>
+    <Source>PythonStu/SeayFindShell/plus/php_call_user_func.py</Source>
+    <Source>PythonStu/SeayFindShell/plus/php_packshell.py</Source>
+    <Source>PythonStu/SeayFindShell/plus/php_Dynamic_function.py</Source>
+    <Source>PythonStu/SeayFindShell/plus/php_include_file.py</Source>
+    <Source>PythonStu/SeayFindShell/plus/all_Sensitive_keywords.py</Source>
+    <Source>PythonStu/SeayFindShell/plus/php_preg_replace.py</Source>
+    <Source>PythonStu/SeayFindShell/plus/php_ddos_cc.py</Source>
+    <Source>PythonStu/SeayFindShell/main.py</Source>
+    <Source>PythonStu/man.py</Source>
+    <Source>PythonStu/tools/dict.py</Source>
+    <Source>PythonStu/tools/unicom/text2sql.py</Source>
+    <Source>PythonStu/tools/password/shit.py</Source>
+    <Source>PythonStu/APIHelper.py</Source>
+    <Source>PythonStu/stu/defineClass.py</Source>
+    <Source>PythonStu/stu/File/ListCWDFile.py</Source>
+    <Source>PythonStu/stu/File/ReadWriteFile.py</Source>
+    <Source>PythonStu/stu/GetArgsFromCommandLine.py</Source>
+    <Source>PythonStu/stu/reduceTest.py</Source>
+    <Source>PythonStu/stu/defineFunction.py</Source>
+    <Source>PythonStu/stu/checkEncoding.py</Source>
+    <Source>PythonStu/stu/APIHelper.py</Source>
+    <Source>PythonStu/stu/wc.py</Source>
+    <Source>PythonStu/stu/and_or.py</Source>
+    <Source>PythonStu/stu/multitask/threading_03.py</Source>
+    <Source>PythonStu/stu/multitask/forking_01.py</Source>
+    <Source>PythonStu/stu/multitask/thread_01.py</Source>
+    <Source>PythonStu/stu/multitask/threading_02.py</Source>
+    <Source>PythonStu/stu/multitask/threading_01.py</Source>
+    <Source>PythonStu/stu/multitask/thread_02.py</Source>
+    <Source>PythonStu/stu/multitask/thread_03_lock.py</Source>
+    <Source>PythonStu/stu/HTML/HP_ParserURLFromHTML.py</Source>
+    <Source>PythonStu/stu/HTML/HP_HandleSpecilTag.py</Source>
+    <Source>PythonStu/stu/HTML/BeautifulSoup_find.py</Source>
+    <Source>PythonStu/stu/HTML/BeautifulSoup_Demo.py</Source>
+    <Source>PythonStu/stu/HTML/checkURL404.py</Source>
+    <Source>PythonStu/stu/HTML/BeautifulSoup_amend.py</Source>
+    <Source>PythonStu/stu/HTML/urllib2_cookie.py</Source>
+    <Source>PythonStu/stu/HTML/getURL_urllib.py</Source>
+    <Source>PythonStu/stu/HTML/urllibExtend.py</Source>
+    <Source>PythonStu/stu/HTML/BeautifulSoup_amend_string.py</Source>
+    <Source>PythonStu/stu/HTML/BeautifulSoup_wrap.py</Source>
+    <Source>PythonStu/stu/HTML/urllib2_httpstatus.py</Source>
+    <Source>PythonStu/stu/HTML/getURL_urllib2.py</Source>
+    <Source>PythonStu/stu/HTML/SG_demo2.py</Source>
+    <Source>PythonStu/stu/HTML/SG_firstDemo.py</Source>
+    <Source>PythonStu/stu/HTML/urllib2_proxy.py</Source>
+    <Source>PythonStu/stu/HTML/BeautifulSoup_append_tag.py</Source>
+    <Source>PythonStu/stu/HTML/BeautifulSoup_tag_clear.py</Source>
+    <Source>PythonStu/stu/HTML/getQzoneBlogList.py</Source>
+    <Source>PythonStu/stu/HTML/BeautifulSoup_tag_insert.py</Source>
+    <Source>PythonStu/stu/HTML/urlretrieveDemo.py</Source>
+    <Source>PythonStu/stu/HTML/urllib2_httpheader.py</Source>
+    <Source>PythonStu/stu/HTML/BeautifulSoup_amend_append.py</Source>
+    <Source>PythonStu/stu/HTML/HP_firstDemo.py</Source>
+    <Source>PythonStu/stu/HTML/urllib2_debuglog.py</Source>
+    <Source>PythonStu/stu/HTML/BeautifulSoup_iter.py</Source>
+    <Source>PythonStu/stu/HTML/urllib2_isRedirect.py</Source>
+    <Source>PythonStu/stu/HTML/httplib_demo.py</Source>
+    <Source>PythonStu/stu/HTML/URLParser.py</Source>
+    <Source>PythonStu/stu/HTML/BeautifulSoup_string.py</Source>
+    <Source>PythonStu/stu/filterTest.py</Source>
+    <Source>PythonStu/stu/cmd/GetArgsFromCommandLine.py</Source>
+    <Source>PythonStu/stu/cmd/GetArgsForm_sys.argv.py</Source>
+    <Source>PythonStu/stu/cmd/GetArgsFrom_optget.py</Source>
+    <Source>PythonStu/stu/socketdemo/SimpleServer.py</Source>
+    <Source>PythonStu/stu/socketdemo/CGI_first.py</Source>
+    <Source>PythonStu/stu/socketdemo/Simple_UDP_Client.py</Source>
+    <Source>PythonStu/stu/socketdemo/queryDNS.py</Source>
+    <Source>PythonStu/stu/socketdemo/SimpleClient.py</Source>
+    <Source>PythonStu/stu/socketdemo/CGI_get.py</Source>
+    <Source>PythonStu/stu/socketdemo/CGI_envr.py</Source>
+    <Source>PythonStu/stu/socketdemo/queryIP.py</Source>
+    <Source>PythonStu/stu/socketdemo/Simple_TCP_Client.py</Source>
+    <Source>PythonStu/stu/socketdemo/Simple_UDP_Server.py</Source>
+    <Source>PythonStu/stu/socketdemo/Simple_TCP_Server.py</Source>
+    <Source>PythonStu/stu/XML/DOM_Parser.py</Source>
+    <Source>PythonStu/stu/multitask/threading_join.py</Source>
+  </Sources>
+  <Forms>
+  </Forms>
+  <Translations>
+  </Translations>
+  <Resources>
+  </Resources>
+  <Interfaces>
+  </Interfaces>
+  <Others>
+  </Others>
+  <Vcs>
+    <VcsType>None</VcsType>
+  </Vcs>
+  <FiletypeAssociations>
+    <FiletypeAssociation pattern="*.ui" type="FORMS" />
+    <FiletypeAssociation pattern="*.idl" type="INTERFACES" />
+    <FiletypeAssociation pattern="*.qm" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.ptl" type="SOURCES" />
+    <FiletypeAssociation pattern="*.pyw" type="SOURCES" />
+    <FiletypeAssociation pattern="*.ui.h" type="FORMS" />
+    <FiletypeAssociation pattern="*.ts" type="TRANSLATIONS" />
+    <FiletypeAssociation pattern="*.py" type="SOURCES" />
+    <FiletypeAssociation pattern="*.qrc" type="RESOURCES" />
+  </FiletypeAssociations>
+</Project>
